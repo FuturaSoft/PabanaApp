@@ -13,7 +13,6 @@ class Application extends Layout
 							   ->setViewport('width=device-width, initial-scale=1, shrink-to-fit=no');
 		$this->Html->Head->Title->set('Pabana - ');
 		$this->Html->Head->Css->appendLibrary('bootstrap', 'bootstrap.min.css')
-							  ->appendLibrary('font-awesome', 'font-awesome.min.css')
 							  ->appendFile('pabana.css');
 		$this->Html->Head->Icon->append('favicon.png');
 		$this->Html->Script->appendLibrary('jquery', 'jquery.min.js')
