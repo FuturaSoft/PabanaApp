@@ -1,0 +1,11 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+	padding-top: 3.5rem;
+}
+.navbar-brand {
+	padding-top: 0;
+}
+
+.navbar-brand img {
+	height: 30px;
+}
