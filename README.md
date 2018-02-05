@@ -4,7 +4,7 @@
 
 This is a skeleton application using the Pabana Framework.
 This application is meant to be used as a starting place for those
-looking to get their feet wet with Zend Framework.
+looking to get their feet wet with Pabana.
 
 ## Installation using Composer
 
@@ -29,7 +29,6 @@ $ composer run --timeout 0 serve
 
 This will start the cli-server on port 8080, and bind it to all network
 interfaces. You can then visit the site at http://localhost:8080/
-- which will bring up Pabana welcome page.
 
 **Note:** The built-in CLI server is *for development only*.
 
