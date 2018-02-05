@@ -22,9 +22,7 @@ Once installed, you can test it out immediately using PHP's built-in web server:
 
 ```bash
 $ cd path/to/install
-$ php -S 0.0.0.0:8080 -t public/ public/index.php
-# OR use the composer alias:
-$ composer run --timeout 0 serve
+$ php -S 0.0.0.0:8080 -t public
 ```
 
 This will start the cli-server on port 8080, and bind it to all network
@@ -51,3 +49,5 @@ project and you should be ready to go! It should look something like below:
     </Directory>
 </VirtualHost>
 ```
+
+**Note:** For WAMPServer you must add ```Require local``` in directory tag.
