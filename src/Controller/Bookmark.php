@@ -3,19 +3,23 @@ namespace App\Controller;
 
 use Pabana\Mvc\Controller;
 
-class Bookmark extends Controller {
-	public function index() {
+class Bookmark extends Controller
+{
+	public function index()
+	{
 		$this->Html->Head->Title->append('Exemple "Bookmark"');
 		$oBookmark = $this->Model->get('Bookmark');
 		$armBookmarkList = $oBookmark->getList();
 		$this->View->setVar('armBookmarkList', $armBookmarkList);
 	}
 
-	public function createForm() {
+	public function createForm()
+	{
 		$this->Html->Head->Title->append('Ajouter un marque page');
 	}
 
-	public function create() {
+	public function create()
+	{
 		$this->Layout->setAutorender(false);
 		$this->View->setAutorender(false);
 		$sName = htmlentities(trim($_POST['name']));
@@ -36,7 +40,8 @@ class Bookmark extends Controller {
 		exit();
 	}
 
-	public function modifyForm() {
+	public function modifyForm()
+	{
 		$this->Html->Head->Title->append('Modifier un marque page');
 		$nId = htmlentities(trim($_GET['id']));
 		if (empty($nId)) {
@@ -49,7 +54,8 @@ class Bookmark extends Controller {
 		$this->View->setVar('armBookmark', $armBookmark);
 	}
 
-	public function modify() {
+	public function modify()
+	{
 		$this->Layout->setAutorender(false);
 		$this->View->setAutorender(false);
 		$nId = htmlentities(trim($_GET['id']));
@@ -74,7 +80,8 @@ class Bookmark extends Controller {
 		exit();
 	}
 
-	public function deleteForm() {
+	public function deleteForm()
+	{
 		$this->Html->Head->Title->append('Supprimer un marque page');
 		$nId = htmlentities(trim($_GET['id']));
 		if (empty($nId)) {
@@ -87,7 +94,8 @@ class Bookmark extends Controller {
 		$this->View->setVar('armBookmark', $armBookmark);
 	}
 
-	public function delete() {
+	public function delete()
+	{
 		$this->Layout->setAutorender(false);
 		$this->View->setAutorender(false);
 		$nId = htmlentities(trim($_GET['id']));
@@ -101,4 +109,3 @@ class Bookmark extends Controller {
 		exit();
 	}
 }
-?>

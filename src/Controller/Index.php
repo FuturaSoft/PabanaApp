@@ -5,8 +5,10 @@ use Pabana\Core\Configuration;
 use Pabana\Mvc\Controller;
 use Pabana\Routing\Router;
 
-class Index extends Controller {
-	public function index() {
+class Index extends Controller
+{
+	public function index()
+	{
 		$this->Html->Head->Title->append('Accueil');
 		$sOperatingSystem = php_uname('s') . ' ' . php_uname('r') . ' ' . php_uname('v');
 		$this->View->setVar('sOperatingSystem', $sOperatingSystem);
@@ -25,11 +27,11 @@ class Index extends Controller {
 		$this->View->setVar('sViewPath', $sViewPath);
 	}
 
-	public function config() {
+	public function config()
+	{
 		$this->Html->Head->Css->appendFile('overload_phpinfo.css');
 		$this->Html->Head->Title->append('Configuration de ' . $_GET['type']);
 		$arsConfiguration = Configuration::readAll();
 		$this->View->setVar('arsConfiguration', $arsConfiguration);
 	}
 }
-?>

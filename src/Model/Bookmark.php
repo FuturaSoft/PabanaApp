@@ -3,14 +3,17 @@ namespace App\Model;
 
 use Pabana\Mvc\Model;
 
-class Bookmark extends Model {
-    public function create($sName, $sUrl) {
+class Bookmark extends Model
+{
+    public function create($sName, $sUrl)
+    {
         $sInsert = "INSERT INTO t_bookmark(bok_name, bok_url)
         VALUES('" . addslashes($sName) . "', '" . addslashes($sUrl) . "')";
         return $this->Connection->exec($sInsert);
     }
 
-    public function getById($nBokId) {
+    public function getById($nBokId)
+    {
         $sSelectById = "SELECT bok_id, bok_name, bok_url
         FROM t_bookmark
         WHERE bok_id = " . $nBokId;
@@ -23,7 +26,8 @@ class Bookmark extends Model {
         }
     }
 
-    public function getList() {
+    public function getList()
+    {
         $sSelectList = "SELECT bok_id, bok_name, bok_url
         FROM t_bookmark
         ORDER BY bok_id";
@@ -36,17 +40,18 @@ class Bookmark extends Model {
         }
     }
 
-    public function modify($nId, $sName, $sUrl) {
+    public function modify($nId, $sName, $sUrl)
+    {
         $sUpdate = "UPDATE t_bookmark
         SET bok_name = '" . addslashes($sName) . "', bok_url = '" . addslashes($sUrl) . "'
         WHERE bok_id = " . $nId;
         return $this->Connection->exec($sUpdate);
     }
 
-    public function delete($nId) {
+    public function delete($nId)
+    {
         $sDelete = "DELETE FROM t_bookmark
         WHERE bok_id = " . $nId;
         return $this->Connection->exec($sDelete);
     }
 }
-?>
