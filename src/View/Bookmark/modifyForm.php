@@ -12,14 +12,14 @@
 				}
 				echo '<div class="alert alert-warning" role="alert">' . $sError . '</div>';
 			} ?>
-			<form action="/sample/bookmark/modify/<?php echo $nId; ?>" method="post">
+			<form action="/sample/bookmark/modify/<?= $nId; ?>" method="post">
 				<div class="form-group">
 					<label for="name">Nom du marque page</label>
-					<input type="text" class="form-control" id="name" name="name" placeholder="Nom" value="<?php echo $armBookmark['bok_name']; ?>">
+					<input type="text" class="form-control" id="name" name="name" placeholder="Nom" value="<?= $armBookmark['bok_name']; ?>">
 				</div>
 				<div class="form-group">
 					<label for="url">Url du marque page</label>
-					<input type="text" class="form-control" id="url" name="url" placeholder="URL" value="<?php echo $armBookmark['bok_url']; ?>">
+					<input type="text" class="form-control" id="url" name="url" placeholder="URL" value="<?= $armBookmark['bok_url']; ?>">
 				</div>
 				<button type="submit" class="btn btn-primary">Modifier</button>
 			</form>

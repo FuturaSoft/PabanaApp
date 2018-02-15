@@ -26,9 +26,9 @@
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="dropdown-documentation" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Documentation</a>
 				<div class="dropdown-menu" aria-labelledby="dropdown-documentation">
-					<a class="dropdown-item" href="https://pabana.futurasoft.fr/documentation/quickstart" target="_blank">Bien commencer</a>
-					<a class="dropdown-item" href="https://pabana.futurasoft.fr/documentation" target="_blank">Documentation</a>
-					<a class="dropdown-item" href="https://pabana.futurasoft.fr/api" target="_blank">API</a>
+					<a class="dropdown-item" href="https://pabana.futurasoft.fr/documentation/1.0/quickstart" target="_blank">Bien commencer</a>
+					<a class="dropdown-item" href="https://pabana.futurasoft.fr/documentation/1.0" target="_blank">Documentation</a>
+					<a class="dropdown-item" href="https://pabana.futurasoft.fr/api/1.0/" target="_blank">API</a>
 				</div>
 			</li>
 		</ul>

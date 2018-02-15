@@ -1,14 +1,14 @@
-<?php echo $this->Html->Doctype; ?>
+<?= $this->Html->Doctype; ?>
 <html lang="en">
     <head>
-        <?php echo $this->Html->Head; ?>
+        <?= $this->Html->Head; ?>
     </head>
     <body>
-        <?php echo $this->element('header'); ?>
+        <?= $this->element('header'); ?>
         <main role="main">
-            <?php echo $this->View; ?>
+            <?= $this->View; ?>
         </main>
-        <?php echo $this->element('footer'); ?>
-        <?php echo $this->Html->Script; ?>
+        <?= $this->element('footer'); ?>
+        <?= $this->Html->Script; ?>
     </body>
 </html>

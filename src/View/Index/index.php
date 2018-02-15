@@ -1,6 +1,6 @@
 <div class="jumbotron">
 	<div class="container">
-		<h1 class="display-4">Bienvenue sur Pabana <?php echo PAB_VERSION . ' "' . PAB_NAME . '"'; ?></h1>
+		<h1 class="display-4">Bienvenue sur Pabana <?= PAB_VERSION . ' "' . PAB_NAME . '"'; ?></h1>
 		<p>Cette application est l'application de base de Pabana vous permettant de vous familiariser avec son fonctionnement.<br />
 		Cette page d'accueil vous permet de voir un diagnositque des différents points nécessaire au fonctionnement de Pabana.<br />
 		Depuis le menu vous pouvez accéder aux exemples de code et à la documentation en ligne de Pabana.</p>
@@ -25,7 +25,7 @@
 			<h2>Système de fichier</h2>
 			<ul>
 				<li>Cette application est stockée dans le répertoire :<br />
-				"<?php echo APP_ROOT; ?>".</li>
+				"<?= APP_ROOT; ?>".</li>
 				<?php if ($bTmpWritable === true) {
 					echo '<li class="text-success">Vous avez les droits en écriture sur le répertoire :<br />"' . APP_ROOT . DS . 'data' . DS . 'tmp".</li>';
 				} else {

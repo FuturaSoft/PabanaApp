@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<h2>Configuration de <?php echo $_GET['type']; ?></h2>
+			<h2>Configuration de <?= $_GET['type']; ?></h2>
 			<?php if ($_GET['type'] == 'php') {
 				phpinfo();
 			} else if ($_GET['type'] == 'pabana') {
@@ -18,8 +18,8 @@
 					foreach ($arsConfiguration as $sConfigKey => $sConfigValue) {
 					?>
 					<tr>
-						<th scope="row"><?php echo $sConfigKey; ?></th>
-						<td><?php echo $sConfigValue; ?></td>
+						<th scope="row"><?= $sConfigKey; ?></th>
+						<td><?= $sConfigValue; ?></td>
 					</tr>
 					<?php } ?>
 				</tbody>

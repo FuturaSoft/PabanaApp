@@ -22,12 +22,12 @@
 				<tbody>
 					<?php foreach ($armBookmarkList as $armBookmark) { ?>
 					<tr>
-						<th scope="row"><?php echo $armBookmark['bok_id']; ?></th>
-						<td><?php echo $armBookmark['bok_name']; ?></td>
-						<td><a href="<?php echo $armBookmark['bok_url']; ?>" target="_blank"><?php echo $armBookmark['bok_url']; ?></a></td>
+						<th scope="row"><?= $armBookmark['bok_id']; ?></th>
+						<td><?= $armBookmark['bok_name']; ?></td>
+						<td><a href="<?= $armBookmark['bok_url']; ?>" target="_blank"><?= $armBookmark['bok_url']; ?></a></td>
 						<td>
-							<a href="/sample/bookmark/modify-form/<?php echo $armBookmark['bok_id']; ?>">Modifier</a><br />
-							<a href="/sample/bookmark/delete-form/<?php echo $armBookmark['bok_id']; ?>">Supprimer</a>
+							<a href="/sample/bookmark/modify-form/<?= $armBookmark['bok_id']; ?>">Modifier</a><br />
+							<a href="/sample/bookmark/delete-form/<?= $armBookmark['bok_id']; ?>">Supprimer</a>
 						</td>
 					</tr>
 					<?php } ?>
