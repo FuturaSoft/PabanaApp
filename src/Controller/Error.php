@@ -7,7 +7,6 @@ class Error extends Controller
 {
     public function index()
     {
-    	$this->Html->Head->Title->append('Erreur ' . $_GET['code']);
+        $this->Html->Head->Title->append('Erreur ' . $_GET['code']);
     }
 }
-?>

@@ -17,57 +17,57 @@
 use Pabana\Routing\RouteCollection;
 
 RouteCollection::add('/sample/bookmark', array(
-	'controller' => 'Bookmark',
-	'action' => 'index'
+    'controller' => 'Bookmark',
+    'action' => 'index'
 ));
 RouteCollection::add('/sample/bookmark/create-form', array(
-	'controller' => 'Bookmark',
-	'action' => 'createForm'
+    'controller' => 'Bookmark',
+    'action' => 'createForm'
 ));
 RouteCollection::add('/sample/bookmark/create-form/error/:error', array(
-	'controller' => 'Bookmark',
-	'action' => 'createForm',
-	'param' => array(
-		'error' => ':error'
-	)
+    'controller' => 'Bookmark',
+    'action' => 'createForm',
+    'param' => array(
+        'error' => ':error'
+    )
 ));
 RouteCollection::add('/sample/bookmark/create', array(
-	'controller' => 'Bookmark',
-	'action' => 'create'
+    'controller' => 'Bookmark',
+    'action' => 'create'
 ));
 RouteCollection::add('/sample/bookmark/modify-form/:id', array(
-	'controller' => 'Bookmark',
-	'action' => 'modifyForm',
-	'param' => array(
-		'id' => ':id'
-	)
+    'controller' => 'Bookmark',
+    'action' => 'modifyForm',
+    'param' => array(
+        'id' => ':id'
+    )
 ));
 RouteCollection::add('/sample/bookmark/modify-form/:id/error/:error', array(
-	'controller' => 'Bookmark',
-	'action' => 'modifyForm',
-	'param' => array(
-		'id' => ':id',
-		'error' => ':error'
-	)
+    'controller' => 'Bookmark',
+    'action' => 'modifyForm',
+    'param' => array(
+        'id' => ':id',
+        'error' => ':error'
+    )
 ));
 RouteCollection::add('/sample/bookmark/modify/:id', array(
-	'controller' => 'Bookmark',
-	'action' => 'modify',
-	'param' => array(
-		'id' => ':id'
-	)
+    'controller' => 'Bookmark',
+    'action' => 'modify',
+    'param' => array(
+        'id' => ':id'
+    )
 ));
 RouteCollection::add('/sample/bookmark/delete-form/:id', array(
-	'controller' => 'Bookmark',
-	'action' => 'deleteForm',
-	'param' => array(
-		'id' => ':id'
-	)
+    'controller' => 'Bookmark',
+    'action' => 'deleteForm',
+    'param' => array(
+        'id' => ':id'
+    )
 ));
 RouteCollection::add('/sample/bookmark/delete/:id', array(
-	'controller' => 'Bookmark',
-	'action' => 'delete',
-	'param' => array(
-		'id' => ':id'
-	)
+    'controller' => 'Bookmark',
+    'action' => 'delete',
+    'param' => array(
+        'id' => ':id'
+    )
 ));

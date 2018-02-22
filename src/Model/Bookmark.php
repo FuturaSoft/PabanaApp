@@ -19,7 +19,7 @@ class Bookmark extends Model
         WHERE bok_id = " . $nBokId;
         $oStatById = $this->Connection->query($sSelectById);
         $armById = $oStatById->fetch();
-        if(!empty($armById)) {
+        if (!empty($armById)) {
             return $armById;
         } else {
             return false;
@@ -33,7 +33,7 @@ class Bookmark extends Model
         ORDER BY bok_id";
         $oStatList = $this->Connection->query($sSelectList);
         $armList = $oStatList->fetchAll();
-        if(!empty($armList)) {
+        if (!empty($armList)) {
             return $armList;
         } else {
             return false;
